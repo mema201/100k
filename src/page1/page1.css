@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+
+}
+.before_logo{
+    width: 100%;
+    margin: auto;
+    min-height :200px;
+    padding: 4vw;
+    background: linear-gradient(to right,#242756 -400%, #ffff 60%);
+}
+.logo{
+    width: 45%;
+    height: 60%;
+    position: relative;
+    left: 3vw;
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+.logo p{
+     margin-top: 1.3vw;
+font-size: 3vw;
+position: relative;
+left: 2vw;
+}
+.logo img {
+    width: 100%;
+    height: 13vw;
+    object-fit: cover;
+
+}
+.logo button{
+    margin-top: 3.5vw;
+    padding:   1vw 3vw;
+    font-size: 2.5vw;
+position: relative;
+left: 2vw;
+background-color: #851811;
+color: white;
+border-radius: 10px;
+}
+.group{
+    width: 45%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,17vw);
+    grid-gap: 2vw;
+    grid-column-gap: 7vw;
+    padding: 20px;
+   
+    margin: auto;
+    background: linear-gradient(to right,#ffff 1%,#851811 150%);
+transform: rotate(-10deg);
+position: absolute;
+right:-4vw ;
+top: -4vw;
+z-index: 4;
+}
+.photo{
+    border-radius: 20px;
+    width: 20vw;
+    height: 25vw;
+overflow: hidden;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+
+}
+.image1 img{
+   
+    object-position: right;
+}
+.image2{
+    margin-right: 1000px;
+}
+.image3 img{
+   
+    object-position: center;
+}
+.header {
+      position: relative;
+      height: 42vw;
+      width: 100%;
+      background-image: url('./header_photo.jpg'); /* Remplace par ta photo */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      text-align: start;
+
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%; height: 100%;
+      background-color: #85181173; 
+      z-index: 1;
+    }
+
+    .header-text {
+      position: relative;
+      z-index: 2;
+      font-size: 2vw;
+      left: 7vw;
+    }
+    .h3{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .equipement {
+        width: 100%;
+     height: 40vw;
+        display: flex;
+        overflow: hidden;
+        background:linear-gradient(#ffff,#cfd2fa);
+        margin-bottom: 40px;
+    }
+    .text{
+    
+        width: 100%;
+        height: 70%;
+        padding-left: 4vw;
+        margin-top: 8vw;
+    }
+    .block{
+         border: 1px solid;
+        width: 30%;
+        height: 45vw;
+        transform: rotate(30deg);
+        background-color: #242756;
+        position: relative;
+        left: 11vw;
+        top: -4vw;
+    }
+    .text h1{
+        font-size: 3.5vw;
+    }
+    .text p{
+        font-size: 2.7vw;
+        margin:3vw 0;
+    }
+    .text button{
+     padding:   1vw 3vw;
+    font-size: 2.5vw;
+background-color: #851811;
+color: white;
+border-radius: 10px;
+margin-bottom: 50px;   
+    }
+    .rouge{
+color: #851811;
+    }
+    .blue{
+color: #242756;
+    }
+
+    /* service */
+    
+
+.services {
+  padding: 50px 20px;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.services .cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.services .card {
+  background: #fdfbf6;
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px 20px 20px;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border: 4px solid;
+  text-align: center;
+}
+
+.services .card h3 {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.services .card p {
+  font-size: 1.5rem;
+  color: #333;
+
+}
+
+/* Icône ronde en haut */
+.services .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #6B1F14;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* Pastilles latérales */
+.services .card::before,
+.services .card::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.services .card::before {
+  left: -10px;
+}
+
+.services .card::after {
+  right: -10px;
+}
+
+/* Couleurs spécifiques */
+.services .card1 {
+  color: #6B1F14;
+  border-color: #6B1F14;
+  background-color: #E9EAF7;
+}
+
+.services .card2 {
+  color: #4A2A1D;
+  background: linear-gradient(to right,#E9EAF7,#FEF5F5);
+}
+
+.services .card3 {
+  background-color: #FEF5F5;
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+.header-text{
+    text-align: center;
+left: 0;
+}
+.before_logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+  .logo {
+    width: 65%;
+    height: ;
+    left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo p, .logo button {
+    left: 0;
+    font-size: 4vw;
+  }
+
+  .group {
+   display: none;
+  }
+
+  .photo {
+    width: 35vw;
+    height: 40vw;
+  }
+
+  .text {
+    padding: 0 20px;
+    margin-top: 6vw;
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 5vw;
+  }
+
+  .text p {
+    font-size: 3.5vw;
+  }
+
+  .text button {
+    font-size: 3vw;
+    padding: 1.5vw 4vw;
+  }
+
+  .equipement {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .block {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+.header-text{
+    text-align: center;
+    font-size: 13px;
+    left: 0;
+}
+  .services .card {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .services .card p {
+    font-size: 1.1rem;
+  }
+
+  .logo img {
+    height: 20vw;
+  }
+
+  .logo button {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text h1 {
+    font-size: 6vw;
+  }
+
+  .text p {
+    font-size: 4vw;
+  }
+
+  .text button {
+    font-size: 4vw;
+  }
+
+  .logo p {
+    font-size: 4.5vw;
+  }
+
+  .logo button {
+    font-size: 4.5vw;
+  }
+
+  .photo {
+    width: 70vw;
+    height: 90vw;
+  }
+}
